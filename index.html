@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat Police Martyrs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Website Section -->
+    <div id="main-website" class="page-section active">
+        <header>
+            <div class="header-container">
+                <div class="logo-left">
+                    <a href="https://rru.ac.in/" target="_blank" class="logo-link">
+                        <img src="https://isacfoundation.org/wp-content/uploads/2021/07/RRU-Logo.png" alt="RRU Logo">
+                    </a>
+                </div>
+                <div class="header-content">
+                    <h1>Gujarat Police Martyrs</h1>
+                    <p>Honoring the Brave Souls Who Sacrificed for the Nation</p>
+                </div>
+                <div class="logo-right">
+                    <a href="https://police.gujarat.gov.in/dgp/default.aspx" target="_blank" class="logo-link">
+                        <img src="Gujarat_Police_Logo.png" alt="Gujarat Police Logo">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-navigation">
+            <div class="nav-container">
+                <ul>
+                    <li><a onclick="showMainWebsite(); scrollToSection('home')">Home</a></li>
+                    <li><a onclick="showMainWebsite(); scrollToSection('martyr-tribute')">Martyr Tribute</a></li>
+                    <li><a onclick="showMainWebsite(); scrollToSection('memorial-gallery')">Memorial Gallery</a></li>
+                    <li><a onclick="showMainWebsite(); scrollToSection('commemorative-events')">Commemorative Events</a></li>
+                    <li><a onclick="showDonationPage()">Support Martyr Families</a></li>
+                    <li><a onclick="showAdminPage()">Admin Panel</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="banner" id="home">
+            <img src="https://cmogujarat.gov.in/sites/default/files/2023-12/policemartyrsday-nth.jpg" alt="Police Martyrs Day Banner" width="100%" height="300">
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="name-search" placeholder="Search by Name" aria-label="Search by Name">
+            <input type="text" id="year-search" placeholder="Search by Martyrdom Year" aria-label="Search by Martyrdom Year">
+            <input type="text" id="org-search" placeholder="Search by Organisation" aria-label="Search by Organisation">
+            <button aria-label="Perform Search">Search</button>
+        </div>
+
+        <section id="martyr-tribute">
+            <h2>Martyr Tributes</h2>
+            <div class="martyr">
+                <img src="https://www.police.gov.in/sites/default/files/upload/files/martyres_image/arjunshinh.JPG" alt="SHRI ARJUNSINH K. VALA">
+                <div class="details">
+                    <h3>SHRI ARJUNSINH K. VALA</h3>
+                    <p><strong>Incident:</strong> While on duty, he tried to stop a vehicle carrying illicit liquor at Shamlaji. The driver of the vehicle hit PSI Arjunsinh on the road, and he succumbed to his injuries.</p>
+                    <p><strong>Martyrdom Year:</strong> 2024</p>
+                    <p><strong>Organization:</strong> Gujarat Police</p>
+                    <p><strong>Rank:</strong> Police Sub-Inspector (PSI)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="memorial-gallery">
+            <h2>Memorial Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://bilkulonline.com/wp-content/uploads/2024/10/DSC1563-scaled-e1729512234576.jpg" alt="Memorial Image 1">
+                <img src="https://bilkulonline.com/wp-content/uploads/2024/10/DSC1446-300x200.jpg" alt="Memorial Image 2">
+                <img src="https://images.bhaskarassets.com/web2images/960/2021/10/21/img-20211021-wa0093_1634818778.jpg" alt="Memorial Image 3">
+            </div>
+            <br>
+            <p style="text-align: center;">Images of martyrs and historical moments of valour</p>
+        </section>
+
+        <section id="commemorative-events">
+            <h2>Commemorative Events</h2>
+            <div class="events-list">
+                <div class="event">
+                    <h3>Annual Martyr's Day Ceremony</h3>
+                    <p>Date: October 21, 2024</p>
+                    <p>Location: Gujarat Police Headquarters, Gandhinagar</p>
+                </div>
+                <div class="event">
+                    <h3>Memorial Wreath Laying</h3>
+                    <p>Date: January 15, 2025</p>
+                    <p>Location: State Police Memorial Ground</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Gujarat Police Martyrs</p>
+                <div class="footer-links">
+                    <a onclick="alert('Privacy Policy - Under Development')">Privacy Policy</a>
+                    <a onclick="alert('Contact Us: admin@gujaratpolice.gov.in')">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Donation/Support Page Section -->
+    <div id="donation-page" class="page-section">
+        <div class="donation-container">
+            <button onclick="showMainWebsite()" class="home-button">Home</button>
+            <h1>Support the Families of Gujarat's Brave Martyrs</h1>
+            <p>Your generous donation can make a difference. Scan the QR code below to contribute.</p>
+            <div class="qr-code">
+                <img src="https://raw.githubusercontent.com/parthysingh/Martyr-Donation/main/assests/police_qr.png" alt="Donate QR Code">
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel Section -->
+    <div id="admin-page" class="page-section">
+        <div class="admin-container">
+            <div class="admin-panel">
+                <div class="sidebar">
+                    <h1>Gujarat Police Martyrs</h1>
+                    <p class="quote">Username: "admin" Password: "password"</p>
+                    <p class="quote">"Sacrifice is the highest form of service. Our martyrs remind us that true courage knows no fear."</p>
+                </div>
+
+                <div class="admin-content">
+                    <button class="small-logout-btn" onclick="adminLogout()" style="display:none;">Logout</button>
+
+                    <!-- Admin Login Section -->
+                    <section class="admin-section active" id="admin-login-section">
+                        <h2 class="form-header">Admin Login</h2>
+                        <input type="text" id="admin-username" placeholder="Username" class="admin-input">
+                        <input type="password" id="admin-password" placeholder="Password" class="admin-input">
+                        <button class="admin-btn login-btn" onclick="adminLogin()">Login</button>
+                        <button class="admin-btn home-btn" onclick="showMainWebsite()">Home</button>
+                    </section>
+
+                    <!-- Admin Dashboard Section -->
+                    <section class="admin-section" id="admin-dashboard-section">
+                        <h2 class="form-header">Memorial Management</h2>
+                        <div class="dashboard-grid">
+                            <div class="dashboard-option" onclick="showAdminMartyrSection()">
+                                <h3>Martyr Details</h3>
+                            </div>
+                            <div class="dashboard-option" onclick="showAdminMemorialSection()">
+                                <h3>Gallery</h3>
+                            </div>
+                            <div class="dashboard-option" onclick="showAdminEventsSection()">
+                                <h3>Commemorative Events</h3>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Admin Martyr Details Section -->
+                    <section class="admin-section" id="admin-martyr-section">
+                        <div class="admin-navigation">
+                            <button class="back-btn" onclick="showAdminDashboard()">Back</button>
+                        </div>
+                        <h2 class="form-header">Martyr Profile</h2>
+                        <input type="text" id="martyr-name" placeholder="Martyr's Full Name" class="admin-input">
+                        <input type="text" id="martyr-incident" placeholder="Incident Details" class="admin-input">
+                        <input type="number" id="martyr-year" placeholder="Year of Martyrdom" class="admin-input">
+                        <input type="text" id="martyr-organisation" placeholder="Organisation" class="admin-input">
+                        <input type="text" id="martyr-rank" placeholder="Rank" class="admin-input">
+                        <input type="file" id="martyr-photo" accept="image/*" class="admin-input">
+                        <button class="admin-btn login-btn" onclick="submitMartyrDetails()">Submit Profile</button>
+                    </section>
+
+                    <!-- Admin Memorial Gallery Section -->
+                    <section class="admin-section" id="admin-memorial-section">
+                        <div class="admin-navigation">
+                            <button class="back-btn" onclick="showAdminDashboard()">Back</button>
+                        </div>
+                        <h2 class="form-header">Memorial Gallery</h2>
+                        <input type="text" id="memorial-event-name" placeholder="Event/Memorial Name" class="admin-input">
+                        <input type="file" id="memorial-media" accept="image/*,video/*" multiple class="admin-input">
+                        <button class="admin-btn login-btn" onclick="submitMemorialGallery()">Upload Media</button>
+                    </section>
+
+                    <!-- Admin Events Section -->
+                    <section class="admin-section" id="admin-events-section">
+                        <div class="admin-navigation">
+                            <button class="back-btn" onclick="showAdminDashboard()">Back</button>
+                        </div>
+                        <h2 class="form-header">Commemorative Events</h2>
+                        <input type="text" id="event-name" placeholder="Event Name" class="admin-input">
+                        <input type="date" id="event-date" placeholder="Event Date" class="admin-input">
+                        <input type="text" id="event-location" placeholder="Location" class="admin-input">
+                        <button class="admin-btn login-btn" onclick="submitEvent()">Add Event</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
